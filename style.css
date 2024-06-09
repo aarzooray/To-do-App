@@ -138,13 +138,30 @@ header{
 }
 
 @media (max-width:500px) {
-
+#container{
+    width: 100vw;
+    font-size: 5vmax;
+}
+.inputTaskBox{
+    padding: 10px 10px;
+    font-size: 5vmax;
+    width: 100vw;
+}
+#inputTask{
+    width: 100vw;
+    font-size: 2.7vmax;
+}
     header{
         font-size: 8vmax;
         letter-spacing: 1px;
     }
     .header{
         height: 5rem;
+    }
+    .taskBox{
+        /* margin: 10px 10px; */
+        width: 94vw;
+        font-size: 2.7vmax;
     }
     
 }
