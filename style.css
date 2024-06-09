@@ -139,16 +139,16 @@ header{
 
 @media (max-width:500px) {
 #container{
-    width: 100vw;
+    width: 95vw;
     font-size: 5vmax;
 }
 .inputTaskBox{
     padding: 10px 10px;
     font-size: 5vmax;
-    width: 100vw;
+    width: vw;
 }
 #inputTask{
-    width: 100vw;
+    width: 95vw;
     font-size: 2.7vmax;
 }
     header{
@@ -160,7 +160,7 @@ header{
     }
     .taskBox{
         /* margin: 10px 10px; */
-        width: 94vw;
+        width: 86vw;
         font-size: 2.7vmax;
     }
     
