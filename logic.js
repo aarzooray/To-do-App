@@ -103,5 +103,12 @@ else{
 }
 
 
+let loader = document.querySelector("#loader");
+window.addEventListener("DOMContentLoaded", function () {
+    loader.style.display = "none";
+
+})
+
+
 addTaskFunEnter();
 addTaskFun();
