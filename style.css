@@ -12,27 +12,37 @@ body{
 
 }
 .header{
-    color: white;
     position: relative;
     background:black ;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    color: white;
+  
     /* color: transparent; */
     /* -webkit-background-clip: text; */
     font-size:10vmax;
     letter-spacing: 10px;
-    text-align: center;
+ 
     /* font-family: "Jersey 10 Charted", sans-serif; */
     font-family: "Jersey 10", sans-serif;
     display: flex;
-    height: 130px;
     align-items: center;
     justify-content: center;
-}
-header{
     color :transparent;
     background:linear-gradient(to right,green,rgb(177, 102, 52),rgb(20, 224, 122));
     -webkit-background-clip: text;
 }
-
+h3{
+    color: cyan;
+    font-family: "roboto",sans-serif;
+    text-shadow: 1px 2px 3px red;
+}
 #container{
     position: fixed;
     top: 50%;
