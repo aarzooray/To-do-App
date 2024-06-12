@@ -31,7 +31,7 @@ header {
 
     /* color: transparent; */
     /* -webkit-background-clip: text; */
-    font-size: 9vmax;
+    font-size: 8vmax;
     letter-spacing: 10px;
 
     /* font-family: "Jersey 10 Charted", sans-serif; */
@@ -181,7 +181,7 @@ h3 {
     }
 
     header {
-        font-size: 8vmax;
+        font-size: 7vmax;
         letter-spacing: 1px;
     }
 
