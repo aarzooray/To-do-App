@@ -102,10 +102,12 @@ else{
 }
 }
 
+let main = document.querySelector("#main");
 
 let loader = document.querySelector("#loader");
 window.addEventListener("DOMContentLoaded", function () {
     loader.style.display = "none";
+    main.style.display = "block";
 
 })
 

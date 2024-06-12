@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
     background-image: url(vecteezy_blue-vector-grunge-background_107486.jpg);
-    /* background-color: antiquewhite; */
-
+    display: none;
 }
-.header{
+
+
+.header {
     position: relative;
-    background:black ;
+    background: black;
     height: 150px;
     text-align: center;
     display: flex;
@@ -21,43 +25,46 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-header{
+
+header {
     color: white;
-  
+
     /* color: transparent; */
     /* -webkit-background-clip: text; */
-    font-size:10vmax;
+    font-size: 9vmax;
     letter-spacing: 10px;
- 
+
     /* font-family: "Jersey 10 Charted", sans-serif; */
     font-family: "Jersey 10", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    color :transparent;
-    background:linear-gradient(to right,green,rgb(177, 102, 52),rgb(20, 224, 122));
+    color: transparent;
+    background: linear-gradient(to right, green, rgb(177, 102, 52), rgb(20, 224, 122));
     -webkit-background-clip: text;
 }
-h3{
+
+h3 {
     color: cyan;
-    font-family: "roboto",sans-serif;
+    font-family: "roboto", sans-serif;
     text-shadow: 1px 2px 3px red;
 }
-#container{
+
+#container {
     position: fixed;
     top: 50%;
     /* border: 2px soild black; */
     /* width: 80%; */
- background: linear-gradient(to right,rgb(194, 190, 190),rgb(38, 129, 129),rgb(141, 141, 138))20%;
+    background: linear-gradient(to right, rgb(194, 190, 190), rgb(38, 129, 129), rgb(141, 141, 138))20%;
     border-radius: 4px;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     /* transition: all 1.2s ease; */
 }
 
-.cont::before{
+.cont::before {
     content: " ";
-    background-image:linear-gradient(90deg,#D7E4C0,#a0e9e3) ;
+    background-image: linear-gradient(90deg, #D7E4C0, #a0e9e3);
     inset: 0;
     /* border: 1px solid black; */
     border-radius: 4px;
@@ -71,17 +78,19 @@ h3{
     height: 100%;
 }
 
-#container:hover .cont::before{
+#container:hover .cont::before {
     /* background-color: chartreuse; */
 }
-.inputTaskBox{
+
+.inputTaskBox {
     padding: 15px 30px;
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
-#inputTask{
+
+#inputTask {
     width: 55vw;
     max-width: 450px;
     height: 2.5rem;
@@ -91,13 +100,15 @@ h3{
     border: none;
     font-size: 20px;
 }
-#addBtn{
+
+#addBtn {
     cursor: pointer;
     font-size: 20px;
     height: 40px;
     width: 40px;
 }
-.taskBox{
+
+.taskBox {
     margin: 5px auto;
     border: 1px solid black;
     display: flex;
@@ -105,42 +116,47 @@ h3{
     font-family: "Roboto", sans-serif;
     justify-content: center;
     width: 63vw;
-    max-width:500px;
+    max-width: 500px;
     /* min-width: 250px; */
     height: 40px;
     /* gap: 10px; */
     /* margin: 5px 2px; */
 }
-.btn{
+
+.btn {
     font-size: 23px;
     border-left: 1px solid yellow;
     height: 40px;
     width: 40px;
     cursor: pointer;
-  margin-left: 10px;
-  background-color: transparent;
-  border: none;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
 }
-.btn:nth-child(1)
-{
+
+.btn:nth-child(1) {
     color: red;
 }
- #delBtn{
-    color:rgb(189, 36, 36);
+
+#delBtn {
+    color: rgb(189, 36, 36);
     /* border: 2px solid green;  */
 }
 
-#doneBtn{
-    color :rgb(7, 190, 7);
+#doneBtn {
+    color: rgb(7, 190, 7);
 }
-#doneBtn:hover{
+
+#doneBtn:hover {
     color: rgb(6, 226, 6);
 }
-#delBtn:hover{
+
+#delBtn:hover {
     color: red;
 }
-.task{
-    
+
+.task {
+
     list-style-type: none;
     padding: 0px 10px;
     font-size: 19px;
@@ -148,41 +164,47 @@ h3{
 }
 
 @media (max-width:500px) {
-#container{
-    width: 95vw;
-    font-size: 2vmax;
-}
-.inputTaskBox{
-    padding: 10px 10px;
-    font-size: 1vmax;
-    /* width: 85vw; */
-}
-#inputTask{
-    width: 70vw;
-    font-size: 2.7vmax;
-}
-    header{
+    #container {
+        width: 95vw;
+        font-size: 2vmax;
+    }
+
+    .inputTaskBox {
+        padding: 10px 10px;
+        font-size: 1vmax;
+        /* width: 85vw; */
+    }
+
+    #inputTask {
+        width: 70vw;
+        font-size: 2.7vmax;
+    }
+
+    header {
         font-size: 8vmax;
         letter-spacing: 1px;
     }
-    .header{
+
+    .header {
         height: 5rem;
     }
-    .taskBox{
+
+    .taskBox {
         width: 85vw;
     }
-  
-    #addBtn{
+
+    #addBtn {
         width: 40px;
         height: 40px;
     }
-    
+
 }
+
 /* //laoder */
-#loader{
+#loader {
     width: 100%;
     height: 100vh;
-    background-color:grey ;
+    background-color: grey;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,7 +212,8 @@ h3{
     display: block;
 
 }
-#load{
+
+#load {
     width: 10vw;
     margin: 0;
     padding: 0;
@@ -200,18 +223,21 @@ h3{
     position: absolute;
     top: 40%;
     left: 45%;
-    transform: translate(-40%,-45%);
+    transform: translate(-40%, -45%);
     border-radius: 100%;
     border-top: 4px solid black;
-    animation:1s ease-in-out infinite  rotate;
-    
+    animation: 1s ease-in-out infinite rotate;
+
 }
+
 @keyframes rotate {
-0%{
-    transform: rotate(0deg);;
-}
-100%{
-    transform:rotate(360deg) ;
-}
-    
+    0% {
+        transform: rotate(0deg);
+        ;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
